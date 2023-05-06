@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css">   
     <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
-    <title>..:: place clothes ::..</title>
+    <title> place clothes </title>
 </head>
 <body>
     <!-- aula 24/04/2023 - HTML -->
     <!-- inicio menu responsivo -->
     <header id="header">
-        <a id="logo" href="index.html"><img src="./img/logo.jpg" alt="logo Place Clothes"></a>
+        <a id="logo" href="index.html"><img src="./img/logo1.png" alt="logo Place Clothes"></a>
         <nav id="nav">
             <button aria-label="abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
                 <span id="hamburger"></span>
@@ -28,51 +28,53 @@
     </header>
     <!-- fim menu responsivo -->  
     <!-- inicio carousel página principal -->  
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="1600">
-                <img
-                src="./img/carousel_1.avif" 
-                class="d-block w-100"
-                alt="..."
-                />
+    
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active" data-bs-interval="1600">
+                    <img
+                    src="./img/carousel1.webp" 
+                    class="d-block w-100"
+                    alt="..."
+                    />
+                </div>
+                <div class="carousel-item" data-bs-interval="1500">
+                    <img
+                    src="./img/carousel2_files.webp" 
+                    class="d-block w-100"
+                    alt="..."
+                    />
+                </div>
+                <div class="carousel-item" data-bs-interval="1500">
+                    <img
+                    src="./img/carousel3.webp" 
+                    class="d-block w-100"
+                    alt="..."
+                    />
+                </div>
             </div>
-            <div class="carousel-item" data-bs-interval="1500">
-                <img
-                src="./img/carousel_2.jpg" 
-                class="d-block w-100"
-                alt="..."
-                />
-            </div>
-            <div class="carousel-item" data-bs-interval="1500">
-                <img
-                src="./img/carousel_3.webp" 
-                class="d-block w-100"
-                alt="..."
-                />
-            </div>
+            <!-- fim imagens carousel-->
+            <!-- inicio controle do carousel-->
+            <button 
+                class="carousel-control-prev"
+                data-bs-target="#carouselExampleInterval"
+                type="button"
+                data-bs-slide="prev"
+            >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button 
+                class="carousel-control-next"
+                data-bs-target="#carouselExampleInterval"
+                type="button"
+                data-bs-slide="next"
+            >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
         </div>
-        <!-- fim imagens carousel-->
-        <!-- inicio controle do carousel-->
-        <button 
-            class="carousel-control-prev"
-            data-bs-target="#carouselExampleInterval"
-            type="button"
-            data-bs-slide="prev"
-        >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-        </button>
-        <button 
-            class="carousel-control-next"
-            data-bs-target="#carouselExampleInterval"
-            type="button"
-            data-bs-slide="next"
-        >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-        </button>
-    </div>
+    
     <!-- fim do controle do carousel -->
     <!-- fim do carousel -->
     <!-- Início Banner -->
@@ -81,7 +83,7 @@
             <div class="row m-0">
                 <div class="col-12 col-md-6">
                     <figure>
-                        <img src="img/banner 1.jpg" alt="banner-home">
+                        <img src="img/banner1.jpeg" alt="banner-home">
                     </figure>
                 </div>
                 <div class="col-12 col-md-6">
@@ -108,15 +110,15 @@
                 <!-- Inicio da Imagem 1 -->
             <div class="col-6 col-md-2 pr-0"> 
                 <figure>
-                    <a href="produtos.html"><img src="./img/img_destaque1.webp" alt="produto destaque" width="100%"></a>
-                    <figcaption>Vestido <br> 2023</figcaption>
+                    <a href="produtos.html"><img src="./img/destaque1.jpg" alt="produto destaque" width="100%"></a>
+                    <figcaption>Calça <br> 2023</figcaption>
                 </figure>
             </div>
             <!-- fim da imagem 1 -->
                 <!-- Inicio da Imagem 2 -->
             <div class="col-6 col-md-2 pr-0"> 
                 <figure>
-                    <a href="produtos.html"><img src="./img/img_destaque2.webp" alt="produto destaque" width="100%"></a>
+                    <a href="produtos.html"><img src="./img/destaque2.webp" alt="produto destaque" width="100%"></a>
                     <figcaption>Vestido <br> 2023</figcaption>
                 </figure>
             </div>
@@ -124,7 +126,7 @@
                 <!-- Inicio da Imagem 3 -->
             <div class="col-6 col-md-2 pr-0"> 
                 <figure>
-                    <a href="produtos.html"><img src="./img/img_destaque3.webp" alt="produto destaque" width="100%"></a>
+                    <a href="produtos.html"><img src="./img/destaque3.webp" alt="produto destaque" width="100%"></a>
                     <figcaption>Vestido <br> 2023</figcaption>
                 </figure>
             </div>
@@ -132,11 +134,19 @@
                 <!-- Inicio da Imagem 4 -->
             <div class="col-6 col-md-2 pr-0"> 
                 <figure>
-                    <a href="produtos.html"><img src="./img/img_destaque4.webp" alt="produto destaque" width="100%"></a>
+                    <a href="produtos.html"><img src="./img/destaque4.webp" alt="produto destaque" width="100%"></a>
                     <figcaption>Corse <br> 2023</figcaption>
                 </figure>
             </div>
             <!-- fim da imagem 4 -->  
+                <!-- Inicio da Imagem 5 -->
+            <div class="col-6 col-md-2 pr-0"> 
+                <figure>
+                    <a href="produtos.html"><img src="./img/destaque5.jpg" alt="produto destaque" width="100%"></a>
+                    <figcaption>Corse <br> 2023</figcaption>
+                </figure>
+            </div>
+            <!-- fim da imagem 5 -->  
             <!-- inicio saiba mais -->
             <div class="col-12">
                 <a href="#">Saiba Mais</a>
