@@ -49,15 +49,13 @@ body, ul {
 #btn-mobile {
     display: none;
 }
-/*
 .carousel-inner .carousel-item img {
     width: 100%;
     margin: auto;
     max-height: 500px;
     padding-top: 75px;
 }
-*/
-/*
+
 #carouselExampleInterval {
     position: relative;
     z-index: 10;
@@ -67,7 +65,69 @@ body, ul {
     max-height: 500px;
     width: 100%;
 }
-*/
+@media (max-width: 600px) {
+    #menu {
+        display: block;
+        position: absolute;
+        width: 15em;
+        top: 70px;
+        right: 0px;
+        background: #e7e7e7;
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        padding-left: 5px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #menu li {
+        padding-top: 30px;
+        padding-bottom: 0px;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0,0,0,0.05);
+    }
+    #nav.active #menu{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: hidden;
+    }
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+    }
+    #hamburger {
+        border-top: 2px solid; /* Melhorando o hemburger >> Espessura da linha */
+        width: 25px; /*Alterando a largura do hamburger */
+        color: #002a60;/* Alterando a cor do hamburger */
+    }
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 25px;/*Alterando a largura do hamburger */
+        height: 2px;
+        background: currentColor;
+        margin-top: 4px; /* Alterando espaçamento entre o hamburger */
+        position: relative;
+        border-top: 2px solid; /* Melhorando o hemburger >> Espessura da linha */
+    }
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
 
 /* CSS Estilos Banner */
 .section-banner-home {
@@ -170,10 +230,21 @@ body, ul {
     font-weight: 400;
 }
 /* fim CSS Novidades */
-/* Inicio CSS galeria */
-
+/* Início CSS Galeria */
 .galeria {
     margin: 60px auto 20px;
+    /* Quando tivermos 4 valores no margin = top / right / botton / left      >  Ex: margin: 60px 60px 60px 60px;
+       Quando tivermos 3 valores = top / right and left / botton
+    >  Ex: margin: 60px auto 60px;
+       Quanto tivermos 2 valores = top and botton / right and left
+    >  Ex: margin: 60px 30px;
+       Quando tivermos 1 valor = top and botton and right and left
+    >  Ex: margin: 60px;
+    >> Essa regra vale também para padding. <<
+       */
+}
+.galeria .container {
+    margin-left: 11%;
 }
 
 .galeria h2 {
@@ -189,4 +260,43 @@ body, ul {
 .galeria .gallery {
     width: 30%;
     margin: 14px auto 50px;
+}
+.galeria .gallery img {
+    width: 80%;
+    height: 80%;
+}
+/* Fim CSS Galeria */
+
+/* Início CSS Footer */
+
+.rodape {
+    padding: 50px 50px 0;
+}
+.rodape .container img {
+    height: 50%;
+    width: 50%;
+}
+.rodape .info-contato p {
+    margin: 0;
+}
+.rodape a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+}
+.rodape a:hover {
+    font-weight: bold;
+}
+.rodape .redes-sociais {
+    display: inline-block;
+}
+.rodape .redes-sociais img {
+    width: 45px;
+    height: 40px;
+}
+.rodape p.direitos {
+    text-align: center;
+    margin-top: 40px;
+}
+/* Fim CSS Footer . */
 }
