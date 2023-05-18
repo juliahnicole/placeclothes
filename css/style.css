@@ -103,7 +103,7 @@ body, ul {
     #hamburger {
         border-top: 2px solid; /* Melhorando o hemburger >> Espessura da linha */
         width: 25px; /*Alterando a largura do hamburger */
-        color: #002a60;/* Alterando a cor do hamburger */
+        color: #000000;/* Alterando a cor do hamburger */
     }
     #hamburger::after,
     #hamburger::before {
@@ -135,7 +135,7 @@ body, ul {
     height: 500px;
     margin-top: 10px;
     padding: 50px;
-    background-color: #303b52;
+    background-color: #000000;
 }
 .section-banner-home img {
     height: 400px;
@@ -205,7 +205,7 @@ body, ul {
 .destaque img {
     height: 160px;
 /*  fim CSS Destaque */
-
+}
 /* Inicio CSS Novidades */
 
 .novidades .text-body {
@@ -265,6 +265,10 @@ body, ul {
     width: 80%;
     height: 80%;
 }
+.galeria .gallery img:hover {
+    transform: scale(1.2);
+    transition: transform .2s;
+}
 /* Fim CSS Galeria */
 
 /* Início CSS Footer */
@@ -275,6 +279,10 @@ body, ul {
 .rodape .container img {
     height: 50%;
     width: 50%;
+    transition: transform .3s;
+}
+.rodape .container img:hover {
+    transform: scale(1.5);
 }
 .rodape .info-contato p {
     margin: 0;
@@ -299,4 +307,3 @@ body, ul {
     margin-top: 40px;
 }
 /* Fim CSS Footer . */
-}
