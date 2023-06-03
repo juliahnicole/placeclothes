@@ -278,7 +278,7 @@ body, ul {
     padding: 50px 50px 0;
     background-color: #69696937;
 }
-.rodape .container img {
+.rodape .container #img-logo {
     height: 50%;
     width: 50%;
     transition: transform .3s;
@@ -466,24 +466,5 @@ body, ul {
 }
 .whatsapp img {
     height: 50px;
-}
-.whatsapp .pulando {
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
-    animation: pulando .4s cubic-bezier(.53, -0.03, .67, 1.06);
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-}
-@keyframes pulando {
-    0% {
-        transform: translateY(0px);
-    }
-    100% {
-        transform: translateY(100%);
-        width: 70px;
-        height: 40px;
-    }
-    
 }
 /* fim whatsapp */
